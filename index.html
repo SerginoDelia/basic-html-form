@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic HTML Form</title>
+</head>
+
+<body>
+  <h1>Basic HTML Form</h1>
+
+  <form action="form-handling-url" method="post">
+    <fieldset>
+      <legend>Add user</legend>
+
+      <div>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="first_name">
+      </div>
+
+      <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="last_name">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email_address">
+      </div>
+
+      <label for="status">Status</label>
+      <select name="user_status" id="status">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="guest">Guest</option>
+      </select>
+      </div>
+
+      <div>
+        <p>Choose your favorite programming language</p>
+        <div>
+          <input type="radio" id="html" name="programming_language" value="html">
+          <label for="html">HTML</label>
+
+        </div>
+
+        <div>
+          <input type="radio" id="css" name="programming_language" value="css">
+          <label for="css">CSS</label>
+        </div>
+
+        <div>
+          <input type="radio" id="javascript" name="programming_language" value="javascript">
+          <label for="javascript">JavaScript</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="comments">Comments</label>
+        <textarea name="user comments" id="comments" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <label for="currentDate">Current Date</label>
+        <input type="date" id="currentDate" name="current_date">
+      </div>
+
+      <div>
+        <input type="checkbox" id="signUpForNewsletter" name="sign_up_for_newsletter">
+        <label for="signUpForNewsletter">Sign up For newsletter</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="agreeToTerms" name="agree_to_terms">
+        <label for="agreeToTerms">Agree to terms and conditions</label>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
